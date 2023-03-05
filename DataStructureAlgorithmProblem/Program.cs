@@ -14,7 +14,7 @@ namespace Algorithms
         {
             Permutation permutation = new Permutation();
 
-            Console.Write("1.Permutation \n Enter your choice:");
+            Console.WriteLine("1.Permutation \n Enter your choice:");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -23,6 +23,13 @@ namespace Algorithms
                     string str = Console.ReadLine();
                     int n = str.Length;
                     permutation.permute(str, 0, n - 1);
+                    break;
+
+                case 2:
+                    BinarySearch binarySearch = new BinarySearch();
+                    Console.WriteLine("Enter word to search:");
+                    str = Console.ReadLine();
+                    binarySearch.search(str);
                     break;
                 default:
                     Console.WriteLine("Invalid choice.");
