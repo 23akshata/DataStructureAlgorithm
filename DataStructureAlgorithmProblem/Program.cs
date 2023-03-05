@@ -31,6 +31,20 @@ namespace Algorithms
                     str = Console.ReadLine();
                     binarySearch.search(str);
                     break;
+
+                case 3:
+                    InsertionSort insertion = new InsertionSort();
+                    Console.WriteLine("How many strings you want to add:");
+                    int no = Convert.ToInt32(Console.ReadLine());
+                    string[] array = new string[no];
+                    for (int i = 0; i < no; i++)
+                    {
+                        Console.WriteLine("Enter string:");
+                        string s = Console.ReadLine();
+                        array[i] = s;
+                    }
+                    insertion.Sorting(array);
+                    break;
                 default:
                     Console.WriteLine("Invalid choice.");
                     break;
