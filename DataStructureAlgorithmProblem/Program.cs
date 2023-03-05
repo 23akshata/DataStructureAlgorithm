@@ -59,6 +59,15 @@ namespace Algorithms
                     }
                     bubble.Sort(unsorted);
                     break;
+
+                case 5:
+                    AnagramDetection anagram = new AnagramDetection();
+                    Console.WriteLine("Enter first strings:");
+                    string s1 = Console.ReadLine();
+                    Console.WriteLine("Enter first strings:");
+                    string s2 = Console.ReadLine();
+                    anagram.Detection(s1, s2);
+                    break;
                 default:
                     Console.WriteLine("Invalid choice.");
                     break;
