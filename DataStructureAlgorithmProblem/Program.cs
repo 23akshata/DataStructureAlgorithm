@@ -45,6 +45,20 @@ namespace Algorithms
                     }
                     insertion.Sorting(array);
                     break;
+
+                case 4:
+                    BubbleSorting bubble = new BubbleSorting();
+                    Console.WriteLine("\nHow many strings you want to add:");
+                    n = Convert.ToInt32(Console.ReadLine());
+                    string[] unsorted = new string[n];
+                    for (int i = 0; i < n; i++)
+                    {
+                        Console.WriteLine("Enter string:");
+                        string s = Console.ReadLine();
+                        unsorted[i] = s;
+                    }
+                    bubble.Sort(unsorted);
+                    break;
                 default:
                     Console.WriteLine("Invalid choice.");
                     break;
